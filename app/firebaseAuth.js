@@ -1,12 +1,12 @@
 let firebaseConfig = {
-    apiKey: "AIzaSyAzVNCPJKi9G9GrUIuDlBitV-CRxbiUUas",
-    authDomain: "blazordemo-286100.firebaseapp.com",
-    databaseURL: "https://blazordemo-286100.firebaseio.com",
-    projectId: "blazordemo-286100",
-    storageBucket: "blazordemo-286100.appspot.com",
-    messagingSenderId: "549489084710",
-    appId: "1:549489084710:web:d047f4d2211ad0710219e7",
-    measurementId: "G-CH2EG97CMT"
+    apiKey: "<apiKey>",
+    authDomain: "blazordemo-000000.firebaseapp.com",
+    databaseURL: "https://blazordemo-000000.firebaseio.com",
+    projectId: "blazordemo-000000",
+    storageBucket: "blazordemo-000000.appspot.com",
+    messagingSenderId: "549000000710",
+    appId: "1:549489084710:web:dasdfasfasdfasfasdfad0710219e7",
+    measurementId: "G-CH2E007CMT"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -19,7 +19,7 @@ let accessToken = '';
 provider.setCustomParameters({
     tenant: 'b55f0c51-61a7-45c3-84df-33569b247796',
 });
-firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
+firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
 
 // this is required for Graph
 provider.addScope('mail.read');

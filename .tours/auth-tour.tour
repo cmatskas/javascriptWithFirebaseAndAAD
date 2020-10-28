@@ -1,0 +1,81 @@
+{
+  "title": "Auth tour",
+  "steps": [
+    {
+      "file": "app/firebaseAuth.js",
+      "line": 1,
+      "description": "You can grab the `FirebaseConfig` from your Firebase app registration. This object is required to instruct our Firebase code how\r\nto call the *base*, i.e. our Firebase app",
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 4,
+          "character": 1
+        }
+      }
+    },
+    {
+      "file": "app/firebaseAuth.js",
+      "line": 12,
+      "description": "Initialize the `Firebase` object"
+    },
+    {
+      "file": "app/firebaseAuth.js",
+      "line": 15,
+      "description": "Instruct `firebase.auth` that we will be using the Microsoft Identity platform as the auth provider"
+    },
+    {
+      "file": "app/firebaseAuth.js",
+      "line": 20,
+      "description": "This setting/parameter is required so that Firebase can point to the right AAD tenant to authenticate users. This tenant should be the one\r\nwhere we configured our Azure AD app registration."
+    },
+    {
+      "file": "app/firebaseAuth.js",
+      "line": 22,
+      "description": "This is totally optional but you can use it here to change the persistence: LOCAL, SESSION, NONE"
+    },
+    {
+      "file": "app/firebaseAuth.js",
+      "line": 25,
+      "description": "This is where we provide additional scopes for accessing additional resources. In this instance, we are adding MS Graph permissions\r\nto be able to access our emails via MS Graph"
+    },
+    {
+      "file": "app/firebaseAuth.js",
+      "line": 28,
+      "description": "Execute the signin using a popup. We could also have used the `withRedirect` option here"
+    },
+    {
+      "file": "app/firebaseAuth.js",
+      "line": 30,
+      "description": "Update the UI with the user info and store the access token for later usage"
+    },
+    {
+      "file": "app/firebaseAuth.js",
+      "line": 52,
+      "description": "Call MS Graph to retrieve the user profile and pass a callback function to update the UI"
+    },
+    {
+      "file": "app/firebaseAuth.js",
+      "line": 58,
+      "description": "Call MS Graph to retrieve the user's emails and pass a callback function to update the UI upon successful execution of the Graph call"
+    },
+    {
+      "file": "app/ui.js",
+      "line": 18,
+      "description": "Add a new method to respond to logout events - clear the welcome message and reset the login button state"
+    },
+    {
+      "file": "app/index.html",
+      "line": 62,
+      "description": "Remove all msal.js references and add the necessary scripts to retrieve the Firebase code"
+    },
+    {
+      "file": "app/index.html",
+      "line": 68,
+      "description": "Include our custom authentication code"
+    }
+  ],
+  "ref": "main"
+}
